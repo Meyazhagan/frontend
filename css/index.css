@@ -1,0 +1,104 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+.container {
+  width: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px grey;
+  /* overflow: hidden; */
+}
+
+#post-img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+#user-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.post,
+.details {
+  margin: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+.share-div {
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+}
+
+#share {
+  width: auto;
+  height: 0.8rem;
+}
+#user-name,
+#post-date {
+  margin: 0.2rem;
+}
+
+#user-name,
+#post-heading {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+}
+
+#post-content,
+#post-date {
+  color: hsl(212, 23%, 69%);
+}
+
+.popup {
+  width: 15rem;
+  top: -4rem;
+  left: -11rem;
+  display: none;
+  background-color: hsl(212, 11%, 52%);
+  position: absolute;
+}
+.share-div:hover .popup {
+  width: 10rem;
+  height: 3rem;
+  top: -3.5rem;
+  left: -6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(212, 11%, 52%);
+  border-radius: 10px;
+}
+
+.icon {
+  height: 1rem;
+}
