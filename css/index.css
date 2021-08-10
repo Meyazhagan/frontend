@@ -87,7 +87,7 @@ body {
   background-color: hsl(212, 11%, 52%);
   position: absolute;
 }
-.share-div:hover .popup {
+.share-div:focus .popup {
   width: 10rem;
   height: 3rem;
   top: -3.5rem;
